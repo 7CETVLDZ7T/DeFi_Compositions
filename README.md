@@ -93,7 +93,20 @@ python ./scripts/2_network_analysis.py -d "defi_ca_network" -s "all"
 
 The output of the analyses can be found in the output directory.
 
-The analysis of the degree distribution is completed by running the script powerlaw.R, which takes both files of the previous script as an input. 
+
+
+### 3. Further Data Analysis and Plots
+
+#### Flatten
+
+A way to visualize and flatten the nested building-block structure is by running this script:
+
+```sh
+Rscript ./scripts/3_traces_plot.R 
+```
+#### Powerlaw
+
+The analysis of the degree distribution is completed by running the script powerlaw.R, which takes both netowkr files of the section 2 script as an input. 
 It can be run as follows:
 
 ```sh
