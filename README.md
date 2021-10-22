@@ -88,12 +88,13 @@ As an example, the script can be called as follows:
 
 ```sh
 python ./scripts/2_network_analysis.py -d "defi_ca_network_pro" -s "all"
+python ./scripts/2_network_analysis.py -d "defi_ca_network" -s "all"
 ```
 
 The output of the analyses can be found in the output directory.
 
-The analysis of the degree distribution is completed by running the script powerlaw.R, which takes as input the data
-output of the previous script. It can be run as follows:
+The analysis of the degree distribution is completed by running the script powerlaw.R, which takes both files of the previous script as an input. 
+It can be run as follows:
 
 ```sh
 Rscript ./scripts/powerlaw.R
